@@ -31,17 +31,13 @@
         <input type="password" name="password" placeholder="Введите пароль">
         <label>Подтверждение пароля</label>
         <input type="password" name="confirm_password" placeholder="Подтвердите Ваш пароль">
-        <input type="submit" class="btn btn-dark" value="Зарегистрироваться">
-        <p class="lead">
-            У Вас уже есть аккаунт? - <a class="text-my-own-color" href="index.php">Авторизуйтесь!</a>
+        <input type="submit" class="register-btn btn-dark" value="Зарегистрироваться">
+        <p>
+            У вас уже есть аккаунт? - <a href="/">авторизируйтесь</a>!
         </p>
-        <?php
-            if ($_SESSION['message']) {
-                echo '
-                <p class="msg"> ' .$_SESSION['message'] . '</p>';
-            }
-            unset($_SESSION['message']);
-        ?>
+        <p class="msg none">Lorem ipsum.</p>
     </form>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

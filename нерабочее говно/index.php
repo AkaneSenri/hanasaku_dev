@@ -20,23 +20,21 @@ if ($_SESSION['user']) {
 <body>
 
     <!-- Форма авторизации -->
-    <form action="include/signin.php" method="post">
+    <form>
         <label>Логин</label>
         <input type="text" name="login" placeholder="Введите свой логин">
         <label>Пароль</label>
         <input type="password" name="password" placeholder="Введите пароль">
         <small id="passHelp" class="form-text text-muted">Пароль должен состоять не менее чем из 6 символов</small>
-        <input type="submit" class="btn btn-dark" value="Войти">
+        <input type="submit" class="login-btn btn-dark" value="Войти">
         <p class="lead">
             У Вас нет существующего аккаунта? - <a class="text-my-own-color" href="register.php">Зарегистрируйтесь!</a>
         </p>
-        <?php
-            if ($_SESSION['message']) {
-                echo '
-                <p class="msg"> ' .$_SESSION['message'] . '</p>';
-            }
-            unset($_SESSION['message']);
-        ?>
+        <p class="msg none">Lorem ipsum dolor sit amet.</p>
     </form>
+
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/main.js"></script>
+
 </body>
 </html>
