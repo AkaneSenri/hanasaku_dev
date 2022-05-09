@@ -1,4 +1,4 @@
-в{include file="header.tpl"}
+{include file="header.tpl"}
 
 <div class="container mt-5 mb-5 d-flex justify-content-center">
 <form class="form-inline" action="works.php" method="POST">
